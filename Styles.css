@@ -1,0 +1,549 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@500&family=Jost:wght@300&family=Mukta:wght@500&family=Newsreader:opsz@6..72&family=Poppins&family=Quicksand:wght@300;400;500;600&family=Urbanist:wght@300;700&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gabarito:wght@500;600&family=Jost:wght@300&family=Montserrat:wght@600&family=Mukta:wght@500&family=Newsreader:opsz@6..72&family=Nunito&family=Nunito+Sans:opsz,wght@6..12,500&family=Poppins:wght@400;600&family=Quicksand:wght@300;400;500;600&family=Urbanist:wght@300;700&family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+*::selection{
+    background-color: rgb(6, 6, 6);
+    color: rgb(255, 255, 255);
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 2vh;
+    margin-top: 9rem;
+    position: relative;
+    
+    
+   
+}
+#page1 h1{
+    font-family: 'Futura';
+    text-transform: uppercase;
+    font-size: 32vh;
+    line-height: 12rem;
+    letter-spacing: -4px;
+    padding-top: 0.5rem;
+    
+}
+#videocontainer{
+    height: 100%;
+    width: auto;
+    margin-top: 1.5rem;
+    position: relative;
+
+}
+#videocontainer video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#play{
+    background-color: rgb(238, 233, 233);
+    color: rgb(22, 2, 2);
+    padding: 1.5rem 0.9rem;
+    font-family: 'Futura';
+    font-weight: 500;
+    position: fixed;
+    border-radius: 50%;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    opacity: 0;
+    scale: 0;
+    
+}
+#page2{
+       position: relative;
+       height: 110vh;
+       width: 100%;
+       padding: 3vw 1vw;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       
+}
+#page2 .elem{
+        height: 100%;
+        width: 30%;
+        background-color: rgb(255, 255, 255);
+       
+        
+}
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+#page2 .elem .dets {
+    height: 40px;
+    border-radius: 50px;
+    width: 20%;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    margin-left: 4.2rem;
+    background-color: rgb(254, 227, 140);
+
+}
+#page2 .elem .dets:hover{
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+#page3{
+    min-height:200vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+    
+   
+}
+#page3 h1{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(88, 88, 88);
+    font-size: 1rem;
+    margin-left: 33%;
+    
+}
+#page3 h2{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(88, 88, 88);
+    font-size: 1rem;
+    margin-left: 48%;
+    padding-top: 1.1rem;
+}
+#page3 .child{
+    height: 100vh;
+    width: 47vw;
+    padding: 4rem 0;
+    
+    
+}
+#page3 #child1{
+    height: 100vh;
+    width: 47vw;
+    
+    
+}
+#page3 #child3 {
+    height: 100vh;
+    width: 47vw;
+    padding-left: 30px;
+    
+    
+}
+#page3 #child3 h1 {
+    margin-left: 10rem;
+ }
+ #page3 #child3 h2 {
+    margin-left: 17rem;
+ }
+#page3 #child4{
+    height: 90vh;
+    width: 47vw;
+    margin-top: 4rem;
+    
+    
+}
+#page3 #child4 h1{
+    padding-top: 0.5rem;
+    
+}
+#page3 #child4 h2{
+   margin-bottom: 0.5rem;
+    
+}
+#page3 #child2{
+    height: 100vh;
+    width: 47vw;
+ 
+}
+#page3 #child6 h1 {
+    margin-left: 11rem;
+ }
+ #page3 #child6 h2 {
+    margin-left: 17rem;
+ }
+
+#page3 .child img{
+    height: 100%;
+    width: 100%;
+    
+}
+#cursor{
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    
+    background-color: rgb(246, 218, 169);
+    border-radius:50%;
+    transform: translate(-50%,-50%) scale(0); 
+}
+
+
+
+
+.nav{
+    height: 3rem;
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+#logo img{
+    height: 8rem;
+    width: 9rem;
+    padding: 10px 20px;
+}
+#nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+#nav2 #menu{
+    padding: 0 2rem;
+}
+#nav2 #menu a{
+    text-decoration: none;
+    color: rgb(74, 72, 72);
+    font-family: 'Gabarito', cursive;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+#nav2 #menu a:hover{
+    color: black;
+}
+#nav2 #icon{
+    background-color: rgb(192, 191, 190);
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 20px;
+    position: sticky;
+    
+    
+}
+#nav2 #icon:hover{
+    height: 2.5rem;
+    transition: all 0.2s ease-in-out;
+
+}
+#nav2 #icon i:hover{
+        color: rgb(255, 255, 255);
+}
+#nav2 #icon a{
+   margin: 1rem;
+    color: black;
+    text-decoration: none;
+    
+    
+}
+#pagetext1{
+    min-height: 50vh;
+    width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 4rem;
+   
+   
+}
+#pagetext1 h1{
+     font-family: "Futura Now Headline", "Lucida Sans", Tahoma, sans-serif;;
+     font-weight: 900;
+     font-size: 3.5rem;
+     line-height: 3.6rem;
+     padding-right: 20rem;
+     letter-spacing: -1px;
+
+}
+#pagetext1 p{
+    padding-right: 5.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(10, 6, 6);
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    
+    
+    
+}
+#pagetext1 #p1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#pagetext1 a{
+    text-decoration: none;
+    color:rgb(0, 0, 0) ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+    
+    
+}
+#pagetext1 a:hover{
+   border-bottom: 2px solid black;
+    transition: all 0.1s ease-in-out;
+}
+
+
+#page4{
+    position: relative;
+    min-height: 88vh;
+    width: 100%;
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#page4 h1{
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5.5rem;
+    line-height: 5rem;
+    
+    
+    
+}
+#buttonandtext h1{
+    font-family:'Poppins', sans-serif  ;
+    color: rgb(67, 67, 67);
+    font-size: 1rem;
+    margin-left: 41.9%;
+    font-weight: 100;
+    margin-top: 1rem;
+}
+#buttonmessage{
+    padding: 25px 50px;
+    border-radius: 12rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family:'Poppins', sans-serif ;
+    text-transform: uppercase;
+    margin-left: 42%;
+    margin-top: -1rem;
+    cursor: pointer;
+    
+}
+#buttonmessage:hover{
+    background-color: rgb(13, 12, 12);
+    transition: all 0.1s ease-in-out;
+}
+
+
+#page5{
+    position: relative;
+    height: 99vh;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20rem;
+    
+    
+}
+#page5 #image1 img{
+    height: 98vh;
+    padding-left: 23.9rem;
+
+    
+    
+}
+#page5 #image2 img{
+    height: 98vh;
+    padding-right: 1.1rem;
+    
+    
+}
+#page5 #text h1{
+    position: absolute;
+    top: 1px;
+    left: 27px;
+    font-family: 'Futura';
+    font-size: 1.6rem;
+}
+#page5 #text h2{
+    position: absolute;
+    top: 60px;
+    left: 27px;
+    font-family:'Poppins', sans-serif ;
+    font-size: 1rem;
+    color: rgb(61, 61, 61);
+}
+#page5 #text #p1{
+    position: absolute;
+    top: 7rem;
+    left: 27px;
+    font-family:'Poppins', sans-serif ;
+    font-size: 0.9rem;
+
+}
+#page5 #text #p2{
+    position: absolute;
+    top: 11rem;
+    left: 27px;
+    font-family:'Poppins', sans-serif ;
+    font-size: 0.9rem;
+    width: 25%;
+
+}
+#page5 #text a{
+    text-decoration: none;
+    font-family:'Poppins', sans-serif ;
+    font-size: 0.8rem;
+    margin-left: 1.7rem;
+    color: rgb(61, 61, 61);
+    border-bottom: 2px solid rgb(76, 74, 74);
+    
+}
+#page5 #text a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+#page6{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 15rem;
+   
+
+}
+
+
+#page6div2{
+    position: relative;
+    height: 25rem;
+    width: 25rem;
+    
+    
+}
+#page6div2 img{
+    position: absolute;
+    height: 100%;
+    width: 100%;  
+}
+#page6div1 {
+    
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-family:'Poppins', sans-serif ;
+    font-size: 0.8rem;
+    
+       
+    color: rgb(166, 166, 166);
+
+}
+#page6div1 h3{
+    text-transform: uppercase;
+    padding-bottom: 1.1rem;
+}
+
+#page6div1 a{
+    text-decoration: none;
+    color: black;
+    display: grid;
+    font-size: 0.9rem;
+    
+}
+#page6div3 {
+    
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    font-family:'Poppins', sans-serif ;
+    font-size: 0.8rem;
+    
+    color: rgb(166, 166, 166);
+
+}
+#page6div3 h3{
+    text-transform: uppercase;
+    padding-bottom: 1.1rem;
+}
+
+#page6div3 a{
+    text-decoration: none;
+    color: black;
+    display: grid;
+    text-align: end;
+    font-size: 0.9rem;
+    
+}
+
+#footer{
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    font-family:'Poppins', sans-serif ;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    color: rgb(128, 127, 127);
+}
+#footer #text1{
+    position: absolute;
+    color: rgb(64, 65, 64);
+    text-decoration: none;
+    font-size: 0.9rem;
+    top: 0;
+    align-items: center;
+
+  
+}
+#footer #text2{
+    margin-bottom: 4.3rem;
+    margin-right: 1rem;
+
+}
+#footer #text2 a{
+    
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    margin-left: 2rem;
+    font-size: 0.7rem;
+
+}
+#end{
+    height: 5vh;
+    width: 75vw;
+    font-family:'Poppins', sans-serif ;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 11.5rem;
+    margin-top: 2rem;
+    
+
+}
+#end #endh2{
+    font-size: 0.9rem;
+    color: rgb(52, 51, 51);
+    line-height:1.2rem ;
+    margin-bottom: 8rem;
+}
+
+#just{
+    height: 80vh;
+    width: 100%;
+
+}
